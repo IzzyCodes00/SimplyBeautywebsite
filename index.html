@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simply Beauty</title>
+    <link rel="stylesheet" href="products.css" />
+    
+  </head>
+    <header>
+      <nav>
+        <ul class="nav-links">
+          <div class="Logo"><a>SimplyBeauty Catalog</a></div>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="aboutus.html">About us</a></li>
+
+          <div class="hamburger-menu">
+            <a class="menu-button">
+              <img
+                src="Photos/menu (1).png"
+                alt="Menu"
+                width="30"
+                height="30"
+              />
+            </a>
+
+            <div class="hamburgerMenuopened" width="100" height="100">
+              <a a href="products.html">Products</a>
+              <a href="aboutus.html"> About us</a>
+            </div>
+          </div>
+        </ul>
+      </nav>
+    </header>
+    </header>
+    <main>
+      <section>
+        <div class="welcome-message">
+          <h1>Welcome to Simply Beauty!</h1>
+          <p>Your destination for high-quality cosmetics in Aruba.</p>
+        </div>
+        <div class="buttons">
+          <p class="category">Categories:</p>
+          <button class="buttonCategory" onclick="filterItems('all')">
+            All
+          </button>
+          <button class="buttonCategory" onclick="filterItems('eyes')">
+            Eyes
+          </button>
+          <button class="buttonCategory" onclick="filterItems('lips')">
+            Lips
+          </button>
+          <button class="buttonCategory" onclick="filterItems('cheeks')">
+            Cheeks
+          </button>
+          <button class="buttonCategory" onclick="filterItems('skincare')">
+            Skincare
+          </button>
+          <button class="buttonCategory" onclick="filterItems('makeup')">
+            Makeup
+          </button>
+        </div>
+
+        <div id="coming-soon" class="hidden">Coming Soon..</div>
+        <!-- Message initially hidden -->
+
+        <div class="container-products">
+          <div class="product lips">
+            <p class="Color-displayedCss Color-displayedJs">Cherry</p>
+
+            <img
+              id="product-image-1"
+              class="old-image"
+              src="Photos/summerFridays-cherry.jpg"
+              width="300"
+              height="300"
+              alt="Simply Beauty Logo"
+            />
+
+            <p class="product-name">Summerfridays Lip balm</p>
+            <p>Lip balm for hydrated and healthy lips</p>
+            <p>Price: $32</p>
+            <p class="status">Status: <a>In Stock</a></p>
+            
+            <p>
+              Colors:
+              <button
+                class="summerfridays-colors action-button"
+                data-new-src="Photos/summerFridays-brownsugar.jpg"
+                data-target="product-image-1"
+                data-color="Brown Sugar"
+              ></button>
+              <button
+                class="summerfridays-colors action-button"
+                data-new-src="Photos/summerFridays-cherry.jpg"
+                data-target="product-image-1"
+                data-color="Cherry"
+              ></button>
+              <button
+                class="summerfridays-colors action-button"
+                data-new-src="Photos/summerfridays-pinksugar.jpg"
+                data-target="product-image-1"
+                data-color="Pink Sugar"
+              ></button>
+              <button
+                class="summerfridays-colors action-button"
+                data-new-src="Photos/summerfridays-vanillasugar.jpg"
+                data-target="product-image-1"
+                data-color="Vanilla Sugar"
+              ></button>
+            </p>
+          </div>
+
+          <div class="product skincare">
+            <img
+              src="Photos/tower-28-beauty-sos-daily-rescue-facial-spray-unbox.jpg"
+              width="300"
+              height="400"
+              alt="Simply Beauty Logo"
+            />
+
+            <p class="product-name">Tower28 SOS Spray</p>
+
+            <p>Repairing facial spray for sensitive skin.</p>
+            <p>Price: $36</p>
+            <p class="status">Status: <a>In Stock</a></p>
+          </div>
+
+          <div class="product lips">
+            <p class="Color-displayedCss Color-displayedJs">Cherry on Cake</p>
+            <img
+              id="product-image-gisou"
+              src="Photos/Gisou-lipoil-cherryonthecake.webp"
+              width="300"
+              height="300"
+              alt="Simply Beauty Logo"
+            />
+
+            <p class="product-name">Gisou Lip Oil</p>
+            <p>Hydrating lip oil with color and shine.</p>
+            <p>Price: $36</p>
+            <p class="status">Status: <a>In Stock</a></p>
+            <p></p>
+            <p>
+              Colors:
+              <button
+                class="gisouLipoil-buttoncolors action-button"
+                data-new-src="Photos/Gisou-lipoil-watermelon.webp"
+                data-target="product-image-gisou"
+                data-color="Watermelon"
+              ></button>
+              <button
+                class="gisouLipoil-buttoncolors action-button"
+                data-new-src="Photos/Gisou-lipoil-cherryonthecake.webp"
+                data-target="product-image-gisou"
+                data-color="Cherry on cake"
+              ></button>
+            </p>
+          </div>
+
+          <div class="product eyes">
+            <img
+              src="Photos/tower-28-mascara.webp"
+              width="300"
+              height="300"
+              alt="Simply Beauty Logo"
+            />
+
+            <p class="product-name">Tower28 Eye Mascara</p>
+            <p>Bold lashes mascara.</p>
+            <p>Price: $25</p>
+            <p class="status">Status: <a>In Stock</a></p>
+          </div>
+
+          <div class="product lips">
+            <img
+              src="Photos/tower-28-Lipgloss.webp"
+              width="300"
+              height="300"
+              alt="Simply Beauty Logo"
+            />
+
+            <p class="product-name">Tower28 ShineOn Lip</p>
+            <p>Glossy, hydrating lip gloss with shine.</p>
+            <p>Price: $22</p>
+            <p class="status">Status: <a>In Stock</a></p>
+          </div>
+
+          <div class="product skincare">
+            <img
+              src="Photos/caudalie-instantdetoxmask.jpg"
+              width="300"
+              height="300"
+              alt="Simply Beauty Logo"
+            />
+
+            <p class="product-name">Caudalie Instant Detox Max</p>
+            <p>Detoxifying mask for radiant, clear skin.</p>
+            <p>Price: $44</p>
+            <p class="status">Status: <a>In Stock</a></p>
+          </div>
+
+          <div class="product makeup">
+            <img
+              src="Photos/Elf-primer.jpg"
+              width="300"
+              height="300"
+              alt="Simply Beauty Logo"
+            />
+
+            <p class="product-name">Elf Primer</p>
+            <p>Hydrating and smoothing makeup base.</p>
+            <p>Price: $15</p>
+            <p class="status">Status: <a>In Stock</a></p>
+          </div>
+
+          <div class="product lips">
+            <p class="Color-displayedCss Color-displayedJs">Bonbon</p>
+            <img
+              id="product-image-2"
+              src="Photos/Laneige-Sleepingmask-bonbongourmain.webp"
+              width="300"
+              height="300"
+              alt="Simply Beauty Logo"
+            />
+
+            <p class="product-name">Laneige Sleeping Mask</p>
+            <p>Hydrating overnight mask for soft lips.</p>
+            <p>Price: $31</p>
+            <p class="status">Status: <a>In Stock</a></p>
+            <p>
+              Colors:
+              <button
+                class="laneigeSleepingmask-buttoncolors action-button"
+                data-new-src="Photos/Laneige-Sleepingmask-bonbongourmain.webp"
+                data-target="product-image-2"
+                data-color="Bonbon"
+              ></button>
+              <button
+                class="laneigeSleepingmask-buttoncolors action-button"
+                data-new-src="Photos/Laneige-Sleepingmask-berry(1).jpg"
+                data-target="product-image-2"
+                data-color="Berry"
+              ></button>
+            </p>
+          </div>
+          <div class="product lips">
+            <img
+              src="Photos/olehenriksen-liptreatment.jpg"
+              width="300"
+              height="300"
+              alt="Simply Beauty Logo"
+            />
+
+            <p class="product-name">Olehenriksen Lip treatment</p>
+            <p>Hydrating and nourishing lip treatment.</p>
+            <p>Price: $29</p>
+            <p class="status">Status: <a>In Stock</a></p>
+          </div>
+
+          <div class="product makeup">
+            <img
+              src="Photos/saie-illuminator.jpg"
+              width="300"
+              height="300"
+              alt="Simply Beauty Logo"
+            />
+
+            <p class="product-name">Saie Multipurpose Illuminator</p>
+            <p>Multipurpose illuminator for radiant skin.</p>
+
+            <p>Price: $34</p>
+            <p class="status">Status: <a>In Stock</a></p>
+          </div>
+
+          <div class="product skincare">
+            <img
+              src="Photos/beautyofjoseonreliefsun-sunblock.webp"
+              width="300"
+              height="300"
+              alt="Simply Beauty Logo"
+            />
+
+            <p class="product-name">Beauty of Joseon Relief Sun</p>
+            <p>Protects and light on skin</p>
+            <p>Price: $30</p>
+            <p class="status">Status: <a>In Stock</a></p>
+          </div>
+
+          <div class="product eyes">
+            <img
+              src="Photos/theinkeylist_caffeine_eyecream.png"
+              width="300"
+              height="300"
+              alt="Simply Beauty Logo"
+            />
+            <div class="product-info">
+              <p class="product-name">The Inkylist Caffeine Eye Cream</p>
+              <p>Helps fight tired-eyes look</p>
+
+              <p>Price: $16</p>
+
+              <p class="status">Status: <a>In Stock</a></p>
+            </div>
+          </div>
+        </div>
+        <footer>
+          <p>
+            Follow us or place your order via our instagram page at:
+            <a href="https://www.instagram.com/simply_beauty_aua/"
+              >SimplyBeauty</a
+            >
+          </p>
+        </footer>
+      </section>
+    </main>
+
+    <script src="product.js"></script>
+  </body>
+</html>
