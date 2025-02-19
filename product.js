@@ -67,6 +67,7 @@ function updateProductStatus(productName) {
 }
 
 // Example usage:
+updateProductStatus(Tower28 SOS Spray);
 // Ensure the product name matches exactly with the text content of the .product-name element
 
 function updateColorStatusToOutOfStock(targetElementId, colorID, button) {
