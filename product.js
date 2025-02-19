@@ -67,7 +67,6 @@ function updateProductStatus(productName) {
 }
 
 // Example usage:
-updateProductStatus(Tower28 SOS Spray);
 updateProductStatus("Elf Primer");
 // Ensure the product name matches exactly with the text content of the .product-name element
 
