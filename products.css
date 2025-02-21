@@ -271,7 +271,7 @@ section h1 {
 }
 .gisouLipoil-buttoncolors:first-child {
   cursor: pointer;
-  background-color: #eea0a6;
+  background-color: #fbc3c8;
 }
 
 .gisouLipoil-buttoncolors:nth-child(2) {
@@ -301,6 +301,106 @@ section h1 {
 }
 
 .laneigeSleepingmask-buttoncolors:hover {
+  opacity: 0.6;
+}
+
+/*Saie blush catalog*/
+
+.saieBlush-buttoncolors {
+  margin-left: 5px;
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+}
+
+.saieBlush-buttoncolors:first-child {
+  background-color: #e88f96; /* Color: Chilly Mauve Pink */
+  cursor: pointer;
+}
+
+.saieBlush-buttoncolors:nth-child(2) {
+  background: #d98d90; /* Color: Pink Bright Berry */
+  cursor: pointer;
+}
+
+.saieBlush-buttoncolors:hover {
+  opacity: 0.6;
+}
+
+/* Saie illuminator catalog*/
+
+.saieIlluminator-buttoncolors {
+  margin-left: 5px;
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+}
+
+.saieIlluminator-buttoncolors:first-child {
+  background-color: #fcd3c0; /* Color: Rose Glow */
+  cursor: pointer;
+}
+
+.saieIlluminator-buttoncolors:nth-child(2) {
+  background: #f0c9af; /* Color: Star glow */
+  cursor: pointer;
+}
+
+.saieIlluminator-buttoncolors:hover {
+  opacity: 0.6;
+}
+
+/* Rhode Pocket Blush catalog */
+.rhodePocketblush-buttoncolors {
+  margin-left: 5px;
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+}
+
+.rhodePocketblush-buttoncolors:first-child {
+  background-color: #9e3d3b; /* Color: Sleepy Girl */
+  cursor: pointer;
+}
+
+.rhodePocketblush-buttoncolors:nth-child(2) {
+  background: #8a4627; /* Brown that is a little bit lighter */
+  cursor: pointer;
+}
+
+.rhodePocketblush-buttoncolors:nth-child(3) {
+  background: pink; /* Color: Piggy */
+  cursor: pointer;
+}
+
+.rhodePocketblush-buttoncolors:hover {
+  opacity: 0.6;
+}
+
+/* Peptide catalog */
+.peptideBlush-buttoncolors {
+  margin-left: 5px;
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+}
+
+.peptideBlush-buttoncolors:first-child {
+  background-color: #6e3b3a; /* Color: Sleepy Girl */
+  cursor: pointer;
+}
+
+.peptideBlush-buttoncolors:nth-child(2) {
+  background: #ffffff; /* Color: unknown*/
+  cursor: pointer;
+}
+
+.peptideBlush-buttoncolors:nth-child(3) {
+  background: rgb(255, 255, 255); /* Color: unknown*/
+  cursor: pointer;
+}
+
+.peptideBlush-buttoncolors:hover {
   opacity: 0.6;
 }
 
