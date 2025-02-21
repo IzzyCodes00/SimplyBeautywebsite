@@ -259,7 +259,7 @@ section h1 {
 }
 
 .summerfridays-colors:hover {
-  opacity: 0.6;
+  opacity: 0.8;
 }
 
 /* Gisou's color*/
@@ -280,7 +280,7 @@ section h1 {
 }
 
 .gisouLipoil-buttoncolors:hover {
-  opacity: 0.6;
+  opacity: 0.8;
 }
 
 /*laneige sleeping mask catalog*/
@@ -301,7 +301,7 @@ section h1 {
 }
 
 .laneigeSleepingmask-buttoncolors:hover {
-  opacity: 0.6;
+  opacity: 0.8;
 }
 
 /*Saie blush catalog*/
@@ -324,7 +324,7 @@ section h1 {
 }
 
 .saieBlush-buttoncolors:hover {
-  opacity: 0.6;
+  opacity: 0.8;
 }
 
 /* Saie illuminator catalog*/
@@ -347,7 +347,7 @@ section h1 {
 }
 
 .saieIlluminator-buttoncolors:hover {
-  opacity: 0.6;
+  opacity: 0.8;
 }
 
 /* Rhode Pocket Blush catalog */
@@ -374,7 +374,7 @@ section h1 {
 }
 
 .rhodePocketblush-buttoncolors:hover {
-  opacity: 0.6;
+  opacity: 0.9;
 }
 
 /* Peptide catalog */
@@ -391,7 +391,7 @@ section h1 {
 }
 
 .peptideBlush-buttoncolors:nth-child(2) {
-  background: #ffffff; /* Color: unknown*/
+  background: #ab1b52; /* Color: Raspberry */
   cursor: pointer;
 }
 
@@ -401,7 +401,7 @@ section h1 {
 }
 
 .peptideBlush-buttoncolors:hover {
-  opacity: 0.6;
+  opacity: 0.8;
 }
 
 /* to prevent button from collapsing*/
