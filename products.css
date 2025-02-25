@@ -226,6 +226,12 @@ section h1 {
   margin-left: 0px;
 }
 
+.status-outofstock a{
+  color: red
+  margin-left: 0px;
+}
+
+
 .container-products div p {
   padding-left: 10px;
 }
