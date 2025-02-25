@@ -440,6 +440,10 @@ button {
   display: none;
 }
 
+.hidden1 {
+  display: none;
+}
+
 .category {
   display: inline;
   color: #785858;
