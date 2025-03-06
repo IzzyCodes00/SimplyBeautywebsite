@@ -8,6 +8,27 @@
     
   </head>
     <header>
+
+      <script>
+  async function checkForNewVersion() {
+    try {
+      const response = await fetch('/version.txt', { cache: 'no-store' });
+      const latestVersion = await response.text();
+      const currentVersion = localStorage.getItem('siteVersion');
+
+      if (!currentVersion) {
+        localStorage.setItem('siteVersion', latestVersion);
+      } else if (currentVersion !== latestVersion) {
+        localStorage.setItem('siteVersion', latestVersion);
+        location.reload(true); // Force reload to get the new version
+      }
+    } catch (error) {
+      console.error('Error checking for new version:', error);
+    }
+  }
+
+  setInterval(checkForNewVersion, 30000); // Check every 30 seconds
+</script>
       <nav>
         <ul class="nav-links">
           <div class="Logo"><a>SimplyBeauty Catalog</a></div>
