@@ -67,7 +67,8 @@ function updateProductStatus(productName) {
 }
 
 // Example usage:
-updateProductStatus("Elf Primer");
+["Elf Primer", "Tower28 SOS Spray"].forEach(updateProductStatus);
+
 // Ensure the product name matches exactly with the text content of the .product-name element
 
 function updateColorStatusToOutOfStock(targetElementId, colorID, button) {
