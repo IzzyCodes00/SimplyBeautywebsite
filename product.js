@@ -71,6 +71,8 @@ function updateProductStatus(productName) {
   "Elf Primer",
   "Tower28 SOS Spray",
   "Patrick Starrr One/Size Setting Spray",
+  "Rhode Skin Pocket Blush",
+  "Saie Illuminator",
 ].forEach(updateProductStatus);
 
 // Ensure the product name matches exactly with the text content of the .product-name element
