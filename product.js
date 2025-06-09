@@ -73,7 +73,7 @@ function updateProductStatus(productName) {
   "Patrick Starrr One/Size Setting Spray",
   "Saie Illuminator",
   "Saie Blush",
-  "Beauty of Joseon Relief Sun",
+  
 ].forEach(updateProductStatus);
 
 // Ensure the product name matches exactly with the text content of the .product-name element
