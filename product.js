@@ -15,7 +15,7 @@ function updateImageSource(targetElementId, newSrc, colorID, button) {
   const statusElement = productContainer.querySelector(".status a");
   if (statusElement) {
     statusElement.textContent = "In Stock";
-    statusElement.style.color = "green"; // Change the color to green
+    statusElement.style.color = "rgb(28, 214, 28);"; // Change the color to green
   }
 }
 
@@ -73,7 +73,6 @@ function updateProductStatus(productName) {
   "Patrick Starrr One/Size Setting Spray",
   "Saie Illuminator",
   "Saie Blush",
-  
 ].forEach(updateProductStatus);
 
 // Ensure the product name matches exactly with the text content of the .product-name element

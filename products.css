@@ -222,7 +222,8 @@ section h1 {
 }
 
 .status a {
-  color: rgb(0, 128, 0);
+  color: rgb(28, 214, 28); /* Change the color to green */
+  font-weight: 520;
   margin-left: 0px;
 }
 
