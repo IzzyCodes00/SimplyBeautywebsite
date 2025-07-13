@@ -470,7 +470,7 @@ button {
   color: white;
 }
 
-@media (max-width: 820px) {
+@media (max-width: 560px) {
   .category {
     display: block;
     color: #785858;

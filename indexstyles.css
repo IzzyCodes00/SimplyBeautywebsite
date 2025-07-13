@@ -109,7 +109,7 @@ header {
   color: #785858;
   text-shadow: 0 0 8px rgba(120, 88, 88, 0.5);
 }
-@media (max-width: 700px) {
+@media (max-width: 820px) {
   .nav-links li a {
     display: none;
   }
