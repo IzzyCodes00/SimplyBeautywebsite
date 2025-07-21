@@ -9,6 +9,36 @@ body {
   color: #b7a791;
 }
 
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+body.fade-in {
+  animation: fadeIn 0.8s ease-out;
+}
+
+.container-products.fade-category {
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+footer {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 1.3s ease-out, transform 1.3s ease-out;
+}
+
+body.fade-in footer {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 /* Header styles */
 header {
   background-color: #e8d5b4;

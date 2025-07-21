@@ -1,4 +1,8 @@
-// Get the image element
+// Add fade-in class to body on page load
+document.addEventListener("DOMContentLoaded", () => {
+  document.body.classList.add("fade-in");
+});
+//Add fade
 
 // Reusable function to update the image source
 function updateImageSource(targetElementId, newSrc, colorID, button) {
@@ -32,24 +36,31 @@ buttons.forEach((button) => {
 
 function filterItems(category) {
   let items = document.querySelectorAll(".product");
-  let visibleItems = 0; // Counter for visible items
+  let visibleItems = 0;
+  let container = document.querySelector(".container-products");
+  let message = document.getElementById("coming-soon");
 
+  // Filter logic
   items.forEach((item) => {
-    // If the category is 'all', show all items or if the category matches the item, show the item.
     if (category === "all" || item.classList.contains(category)) {
       item.classList.remove("hidden");
-      visibleItems++; // Increment the counter
+      visibleItems++;
     } else {
       item.classList.add("hidden");
     }
   });
-  //check if no items were found
-  let message = document.getElementById("coming-soon");
+
+  // Show or hide "Coming Soon"
   if (visibleItems === 0) {
     message.classList.remove("hidden");
   } else {
     message.classList.add("hidden");
   }
+
+  // Trigger fade animation
+  container.classList.remove("fade-category");
+  void container.offsetWidth; // Force reflow
+  container.classList.add("fade-category");
 }
 
 function updateProductStatus(productName) {
