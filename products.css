@@ -1,11 +1,19 @@
 /* styles.css */
 
 /* General styles */
+html,
 body {
-  background-image: url(""); /* Path to your image */
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+body {
+  background-image: url("Photos/Background.jpg"); /* Path to your image */
   background-size: cover; /* Cover the entire screen */
   background-position: center;
-  background-repeat: no-repeat;
+
+  background-repeat: no-repeat; /* Prevent repeating the image */
+
   margin: 0;
   height: 100vh;
 }
