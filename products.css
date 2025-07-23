@@ -8,7 +8,7 @@ body {
   height: 100%;
 }
 body {
-  background-image: url("Photos/pexels-karolina-grabowska-4709032.jpg"); /* Path to your image */
+  background-image: url("Photos/pexels-vladllenka-789194307-24709900.jpg"); /* Path to your image */
   background-size: cover; /* Cover the entire screen */
   background-position: center;
   background-attachment: fixed; /* Keep the background fixed */
@@ -50,7 +50,7 @@ body.fade-in footer {
 
 /* Header styles */
 header {
-  background-color: #e8d5b4;
+  background-color: #90846e;
   color: #fff;
   padding: 2px 0;
   text-align: center;
@@ -117,6 +117,8 @@ header {
 
 .welcome-message {
   text-align: center;
+  color: white;
+  font-size: larger;
 }
 
 .hamburgerMenuopened a {
