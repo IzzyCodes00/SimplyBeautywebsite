@@ -33,6 +33,11 @@ body.fade-in {
   animation: fadeIn 0.8s ease-out;
 }
 
+.category {
+  color: white;
+  font-size: larger;
+  font-weight: bold;
+}
 .container-products.fade-category {
   animation: fadeIn 0.8s ease-in-out;
 }
@@ -50,7 +55,7 @@ body.fade-in footer {
 
 /* Header styles */
 header {
-  background-color: #90846e;
+  background-color: #bd8b65;
   color: #fff;
   padding: 2px 0;
   text-align: center;
@@ -117,8 +122,11 @@ header {
 
 .welcome-message {
   text-align: center;
+  margin: 0px;
   color: white;
   font-size: larger;
+  background-color: #bd8b657b;
+  width: 100%;
 }
 
 .hamburgerMenuopened a {
@@ -182,7 +190,7 @@ header {
   }
 
   .nav-links li a:hover {
-    color: #785858;
+    color: #f4e1e1;
     text-decoration: underline;
   }
 }
@@ -196,7 +204,7 @@ main {
 
 /* Footer styles */
 footer {
-  background-color: #e8d5b4;
+  background-color: #bd8b65;
   color: #fff;
   text-align: center;
   padding: 3px 0;
@@ -208,11 +216,11 @@ footer {
 }
 
 footer a {
-  color: rgb(135, 81, 81);
+  color: rgb(247, 214, 214);
 }
 
 footer a:hover {
-  color: rgb(192, 95, 95);
+  color: rgb(248, 198, 198);
 }
 
 section {
@@ -241,7 +249,7 @@ section h1 {
 }
 
 .container-products div {
-  background-color: #ffffff;
+  background-color: #fefefe;
   color: rgb(101, 100, 100);
   border-radius: 10px;
   box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.1);
