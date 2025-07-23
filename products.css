@@ -55,7 +55,7 @@ body.fade-in footer {
 
 /* Header styles */
 header {
-  background-color: #bd8b65;
+  background-color: #bd8b65e4;
   color: #fff;
   padding: 2px 0;
   text-align: center;
@@ -125,7 +125,7 @@ header {
   margin: 0px;
   color: white;
   font-size: larger;
-  background-color: #bd8b657b;
+  background-color: #bd8b6565;
   width: 100%;
 }
 
