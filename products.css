@@ -2,11 +2,12 @@
 
 /* General styles */
 body {
-  font-family: Arial, sans-serif;
+  background-image: url(""); /* Path to your image */
+  background-size: cover; /* Cover the entire screen */
+  background-position: center;
+  background-repeat: no-repeat;
   margin: 0;
-  padding: 0;
-  background-color: #f4f4f4;
-  color: #b7a791;
+  height: 100vh;
 }
 
 @keyframes fadeIn {
@@ -188,7 +189,7 @@ footer {
   background-color: #e8d5b4;
   color: #fff;
   text-align: center;
-  padding: 10px 0;
+  padding: 3px 0;
   position: fixed;
   width: 100%;
   bottom: 0;
