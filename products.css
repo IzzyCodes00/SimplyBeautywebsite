@@ -34,7 +34,7 @@ body.fade-in {
 }
 
 .category {
-  color: white;
+  color: #cc4d6a;
   font-size: larger;
   font-weight: bold;
 }
@@ -251,7 +251,7 @@ section h1 {
 }
 
 .container-products div {
-  background-color: #fefefe;
+  background-color: #633131;
   color: rgb(101, 100, 100);
   border-radius: 10px;
   box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.1);
@@ -494,12 +494,6 @@ button {
 
 .hidden1 {
   display: none;
-}
-
-.category {
-  display: block;
-  color: #6d4f4fc5;
-  padding-right: 0px;
 }
 
 .buttonsCategoryWrapper {
