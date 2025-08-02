@@ -55,10 +55,11 @@ body.fade-in footer {
 
 /* Header styles */
 header {
-  background-color: #bd8b65e4;
-  color: #fff;
+  background-color: #ffe9b9;
+  color: #cc4d6a;
   padding: 2px 0;
   text-align: center;
+  font-size: larger;
 }
 
 .nav-links {
@@ -147,7 +148,8 @@ header {
 
 .nav-links li a {
   font-size: larger;
-  color: white;
+  color: #cc4d6a;
+  font-weight: 450;
   list-style: none;
   text-decoration: none;
   padding: 10px;
@@ -496,7 +498,7 @@ button {
 
 .category {
   display: block;
-  color: #785858;
+  color: #6d4f4fc5;
   padding-right: 0px;
 }
 
@@ -508,8 +510,8 @@ button {
   margin-top: 5px;
 }
 .buttonCategory {
-  background-color: #e8d5b4;
-  color: #785858;
+  background-color: #bd8b65;
+  color: #e8e8e7;
   border: none;
   padding: 5px 5px;
   text-align: center;
