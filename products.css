@@ -76,6 +76,8 @@ header {
   font-weight: bold;
   position: absolute;
   left: 30px;
+  justify-content: center;
+  align-self: center;
 }
 
 .hamburger-menu {
@@ -122,12 +124,58 @@ header {
 }
 
 .welcome-message {
-  text-align: center;
-  margin: 0px;
-  color: white;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+
+  flex-wrap: wrap;
+
+  color: rgb(181, 46, 46);
   font-size: larger;
-  background-color: #bd8b6565;
+}
+
+.text-container {
+  background-color: #ecbeb7;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  flex: 1;
   width: 100%;
+}
+.welcome-message h1 {
+  font-size: larger;
+
+  flex-basis: 100%;
+}
+.welcome-message img {
+  max-width: 400px; /* maximum width of the image */
+  width: 100%; /* responsive scaling */
+  height: auto; /* maintain aspect ratio */
+  flex-shrink: 0; /* prevent shrinking too much if the window is narrow */
+  padding-bottom: 100px;
+}
+
+.welcome-message p {
+  max-width: 300px;
+}
+
+.welcome-section {
+  display: flex;
+  justify-content: center; /* left, or flex-end for right */
+  align-items: center; /* top, or center, flex-end for bottom */
+}
+
+.welcome-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.welcome-image img {
+  justify-content: center;
+  max-width: 30%; /* or any size you want */
+  height: auto;
 }
 
 .hamburgerMenuopened a {
@@ -251,7 +299,7 @@ section h1 {
 }
 
 .container-products div {
-  background-color: #000000;
+  background-color: #ffffffb0;
   color: rgb(101, 100, 100);
   border-radius: 10px;
   box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.1);
@@ -313,6 +361,11 @@ section h1 {
 
 .summerfridays-colors:nth-child(4) {
   background-color: #a57c65; /* Color: Vanilla Beige */
+  cursor: pointer;
+}
+
+.summerfridays-colors:nth-child(5) {
+  background-color: #b97443; /* Color: Iced Coffee */
   cursor: pointer;
 }
 

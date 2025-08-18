@@ -77,7 +77,12 @@ header {
 }
 
 .welcome-message {
-  text-align: center;
+  text-align: left;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0px;
+  color: rgb(181, 46, 46);
+  font-size: larger;
 }
 
 .hamburgerMenuopened a {
