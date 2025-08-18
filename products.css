@@ -251,7 +251,7 @@ section h1 {
 }
 
 .container-products div {
-  background-color: #ffffff;
+  background-color: #000000;
   color: rgb(101, 100, 100);
   border-radius: 10px;
   box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.1);
