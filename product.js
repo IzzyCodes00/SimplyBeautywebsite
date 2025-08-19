@@ -78,13 +78,7 @@ function updateProductStatus(productName) {
 }
 
 // Example usage:
-[
-  "Elf Primer",
-  "Tower28 SOS Spray",
-  "Patrick Starrr One/Size Setting Spray",
-  "Saie Illuminator",
-  "Saie Blush",
-].forEach(updateProductStatus);
+["Elf Primer", "Saie Illuminator", "Saie Blush"].forEach(updateProductStatus);
 
 // Ensure the product name matches exactly with the text content of the .product-name element
 
@@ -120,3 +114,27 @@ outOfStockButtons.forEach((button) => {
 // Example usage:
 // updateColorStatusToOutOfStock('product-image-1', 'Cherry');
 //updateColorStatusToOutOfStock("product-image-gisou", "Watermelon");
+
+const carouselSlide = document.querySelector(".carousel-slide");
+const images = document.querySelectorAll(".carousel-slide img");
+const prevBtn = document.querySelector(".carousel-btn.prev");
+const nextBtn = document.querySelector(".carousel-btn.next");
+
+let counter = 0;
+
+function updateCarousel() {
+  const size = images[0].clientWidth;
+  carouselSlide.style.transform = `translateX(${-size * counter}px)`;
+}
+
+nextBtn.addEventListener("click", () => {
+  counter = (counter + 1) % images.length;
+  updateCarousel();
+});
+
+prevBtn.addEventListener("click", () => {
+  counter = (counter - 1 + images.length) % images.length;
+  updateCarousel();
+});
+
+window.addEventListener("resize", updateCarousel);

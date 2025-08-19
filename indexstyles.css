@@ -19,14 +19,6 @@ header {
   text-align: center;
 }
 
-.nav-links {
-  display: flex;
-  justify-content: center;
-  list-style: none;
-  padding: 0;
-  position: relative;
-}
-
 .Logo {
   font-size: larger;
   font-weight: bold;
@@ -78,7 +70,7 @@ header {
 
 .welcome-message {
   text-align: left;
-  display: flex;
+
   flex-wrap: wrap;
   margin: 0px;
   color: rgb(181, 46, 46);
