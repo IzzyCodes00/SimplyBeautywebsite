@@ -92,7 +92,7 @@ header {
   justify-content: space-between;
   flex: wrap; /* normal for larger screens */
 }
-@media (max-width: 4300px) {
+@media (max-width: 430px) {
   .welcome-message:nth-of-type(2) {
     flex-direction: column-reverse;
     max-width: 300px;
