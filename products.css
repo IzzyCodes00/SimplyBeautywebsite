@@ -92,17 +92,18 @@ header {
   justify-content: space-between;
   flex: wrap; /* normal for larger screens */
 }
-@media (max-width: 430px) {
+@media (max-width: 428px), (max-width: 430px), (max-width: 470px) {
   .welcome-message:nth-of-type(2) {
     flex-direction: column-reverse;
     max-width: 300px;
     text-align: left;
+    padding: 0px 20px;
   }
+
   .welcome-message:nth-of-type(2) img {
     max-width: 80%; /* keep image smaller on tiny screens */
-    padding-top: 10%;
-    height: auto;
-    /* maintain aspect ratio */
+    padding-top: 15%;
+    height: auto; /* maintain aspect ratio */
   }
 }
 
@@ -131,14 +132,6 @@ header {
   max-width: 300px;
 }
 
-.welcome-image {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  max-width: 400px; /* maximum width of the image */
-  width: 100%; /* responsive scaling */
-  height: auto; /* maintain aspect ratio */
-}
 .welcome-image img {
   justify-content: center;
   max-width: 30%; /* or any size you want */
