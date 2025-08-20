@@ -101,7 +101,7 @@ header {
   flex-basis: 100%;
 }
 .welcome-message img {
-  max-width: 400px; /* maximum width of the image */
+  max-width: 250px; /* maximum width of the image */
   width: 100%; /* responsive scaling */
   height: auto; /* maintain aspect ratio */
   flex-shrink: 0; /* prevent shrinking too much if the window is narrow */
