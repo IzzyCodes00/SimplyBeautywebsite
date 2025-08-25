@@ -515,8 +515,8 @@ button {
   margin-top: 5px;
 }
 .buttonCategory {
-  background-color: #ffe9b9;
-  color: #f3762e;
+  background-color: #f8eb71cb;
+  color: #cc4d6a;
   border: none;
   padding: 5px 5px;
   text-align: center;
@@ -543,8 +543,8 @@ button {
 }
 
 .buttonCategory:hover {
-  text-shadow: 0 0 24px rgba(120, 88, 88, 1);
-  color: white;
+  text-shadow: 0 0 24px rgb(120, 88, 88);
+  color: rgb(228, 17, 17);
 }
 
 @media (max-width: 560px) {
