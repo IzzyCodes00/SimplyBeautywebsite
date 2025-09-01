@@ -419,7 +419,35 @@ section h1 {
   opacity: 0.8;
 }
 
-/* Rhode Pocket Blush catalog */
+/* Kayali catalog */
+.kayali-buttoncolors {
+  margin-left: 5px;
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+}
+
+.kayali-buttoncolors:first-child {
+  background-color: #bbeac4; /* Color: Pistachio */
+  cursor: pointer;
+}
+
+.kayali-buttoncolors:nth-child(2) {
+  background: pink; /* Color: Marshmallow */
+  cursor: pointer;
+}
+
+.kayali-buttoncolors:nth-child(3) {
+  background: #a83a38; /* Color: Vanilla*/
+  cursor: pointer;
+}
+
+.kayali-buttoncolors:hover {
+  opacity: 0.9;
+}
+
+/* Rhode pocket blush catalog */
+
 .rhodePocketblush-buttoncolors {
   margin-left: 5px;
   border-radius: 50%;
