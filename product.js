@@ -6,20 +6,34 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // Reusable function to update the image source
 function updateImageSource(targetElementId, newSrc, colorID, button) {
-  const targetElement = document.getElementById(targetElementId); // Get the target element
-  targetElement.src = newSrc; // Set the new source
-
+  // Only update the image inside the same product as the button
   const productContainer = button.closest(".product");
+  const targetElement = productContainer.querySelector(`#${targetElementId}`);
+  if (targetElement && newSrc) {
+    targetElement.src = newSrc;
+  }
 
-  // Display the color name
-  displayedColorElement = productContainer.querySelector(".Color-displayedJs");
-  displayedColorElement.innerHTML = colorID;
+  // Only update .Color-displayedJs elements that are direct children of .product-name in this product
+  const productName = productContainer.querySelector(".product-name");
+  if (productName) {
+    const colorDisplayA = productName.querySelector(".Color-displayedJs");
+    if (colorDisplayA) {
+      colorDisplayA.innerHTML = colorID;
+    }
+  }
+  // Also update any .Color-displayedJs elements that are direct children of this product (for block color display)
+  const directColorDisplays = Array.from(productContainer.children).filter(
+    (el) => el.classList && el.classList.contains("Color-displayedJs")
+  );
+  directColorDisplays.forEach((el) => {
+    el.innerHTML = colorID;
+  });
 
   // Change the status to "In Stock"
   const statusElement = productContainer.querySelector(".status a");
   if (statusElement) {
     statusElement.textContent = "In Stock";
-    statusElement.style.color = "rgb(28, 214, 28);"; // Change the color to green
+    statusElement.style.color = "rgb(28, 214, 28)"; // Change the color to green
   }
 }
 
@@ -27,6 +41,15 @@ function updateImageSource(targetElementId, newSrc, colorID, button) {
 const buttons = document.querySelectorAll(".action-button");
 buttons.forEach((button) => {
   button.addEventListener("click", () => {
+    // Remove selected-shade from all sibling shade buttons in the same product
+    const productContainer = button.closest(".product");
+    const shadeButtons = productContainer.querySelectorAll(
+      ".PatrickBlush-shades, .summerfridays-colors, .peptideBlush-buttoncolors"
+    );
+    shadeButtons.forEach((btn) => btn.classList.remove("selected-shade"));
+    // Add selected-shade to the clicked button
+    button.classList.add("selected-shade");
+
     const targetElementId = button.dataset.target; // Get the target element from the data attribute
     const newSrc = button.dataset.newSrc;
     const color = button.dataset.color; // Get the new source from the data attribute

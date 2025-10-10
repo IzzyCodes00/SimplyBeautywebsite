@@ -273,6 +273,7 @@ section h1 {
 
 .container-products div img:hover {
   opacity: 0.6;
+  transition: opacity 0.3s ease-in-out;
 }
 
 .product-name {
@@ -298,8 +299,9 @@ section h1 {
 .summerfridays-colors {
   margin-left: 5px;
   border-radius: 50%;
-  height: 20px;
-  width: 20px;
+  height: 30px;
+  width: 30px;
+  border: 2px solid rgba(0, 0, 0, 0.196); /* Subtle border */
 }
 
 .summerfridays-colors:first-child {
@@ -331,25 +333,77 @@ section h1 {
   opacity: 0.8;
 }
 
-/* Gisou's color*/
-.gisouLipoil-buttoncolors {
+/*Test*/
+
+.PatrickBlush-shades {
   margin-left: 5px;
-  border-radius: 50%;
-  height: 20px;
-  width: 20px;
-}
-.gisouLipoil-buttoncolors:first-child {
-  cursor: pointer;
-  background-color: #fbc3c8;
+  border-radius: 35%;
+  border: none;
+  height: 35px;
+  width: 35px;
 }
 
-.gisouLipoil-buttoncolors:nth-child(2) {
+.PatrickBlush-shades:first-child {
+  background-image: url("Photos/Patrick_blush_button_she's_the_moment.jpg");
+  background-size: cover;
+  background-position: center;
   cursor: pointer;
-  background-color: #cd1636;
 }
 
-.gisouLipoil-buttoncolors:hover {
+.PatrickBlush-shades:nth-child(2) {
+  background-image: url("Photos/Patrick_blush_button_she's_a_doll.jpg");
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+}
+
+.PatrickBlush-shades:nth-child(3) {
+  background-image: url("Photos/Patrick_blush_button_she_left_me_on_red.jpg");
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+}
+
+.PatrickBlush-shades:nth-child(4) {
+  background-image: url("Photos/Patrick_blush_button_she's_that_girl.jpg");
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+}
+
+.PatrickBlush-shades:nth-child(5) {
+  background-image: url("Photos/Patrick_blush_button_she's_vibrant.jpg");
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+}
+
+.PatrickBlush-shades:hover {
   opacity: 0.8;
+}
+
+.PatrickBlush-shades.selected-shade {
+  border: 3px solid #2c2222cb;
+  border-radius: 38%;
+  box-shadow: 0 0 8px #1b030a33;
+}
+
+/*patrick blush catalog*/
+.button-differentshades {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+.button-differentshades img {
+  border: none;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  outline: none;
+  overflow: hidden;
+  padding: 0;
+  margin-left: 5px;
 }
 
 /*laneige sleeping mask catalog*/
@@ -455,31 +509,13 @@ section h1 {
   width: 20px;
 }
 
-.rhodePocketblush-buttoncolors:first-child {
-  background-color: #9e3d3b; /* Color: Sleepy Girl */
-  cursor: pointer;
-}
-
-.rhodePocketblush-buttoncolors:nth-child(2) {
-  background: #8a4627; /* Brown that is a little bit lighter */
-  cursor: pointer;
-}
-
-.rhodePocketblush-buttoncolors:nth-child(3) {
-  background: pink; /* Color: Piggy */
-  cursor: pointer;
-}
-
-.rhodePocketblush-buttoncolors:hover {
-  opacity: 0.9;
-}
-
 /* Peptide catalog */
 .peptideBlush-buttoncolors {
   margin-left: 5px;
   border-radius: 50%;
-  height: 20px;
-  width: 20px;
+  height: 30px;
+  width: 30px;
+  border: 2px solid rgba(0, 0, 0, 0.196);
 }
 
 .peptideBlush-buttoncolors:first-child {
@@ -509,22 +545,19 @@ button {
 
 .product {
   position: relative;
+  overflow: hidden;
 }
 /* Color displayed */
+
 .Color-displayedCss {
-  /* positioning */
   position: absolute;
-  right: 15px;
-  top: 4px;
-
-  margin-top: 1px;
-  color: black;
-  opacity: 0.6;
-  z-index: 1;
-
-  font-size: smaller;
-  font-weight: bold;
-  z-index: 1;
+  top: 0px; /* adjust vertical placement */
+  left: 10px; /* or right: 10px; if you prefer */
+  background-color: rgba(0, 0, 0, 0.6); /* subtle background for readability */
+  color: white;
+  padding: 5px 10px;
+  border-radius: 3px;
+  font-size: 0.9rem;
 }
 
 .hidden {
