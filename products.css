@@ -92,7 +92,8 @@ header {
   justify-content: space-between;
   flex: wrap; /* normal for larger screens */
 }
-@media (max-width: 428px),
+@media (max-width: 424),
+  (max-width: 428px),
   (max-width: 430px),
   (max-width: 440px),
   (max-width: 470px) {
