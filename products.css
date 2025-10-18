@@ -339,6 +339,28 @@ section h1 {
   box-shadow: 0 0 8px #1b030a33;
 }
 
+.PatrickHighlightershades {
+  margin-left: 5px;
+  border-radius: 35%;
+  border: none;
+  height: 35px;
+  width: 35px;
+}
+
+.PatrickHighlightershades:first-child {
+  background-image: url("Photos/Patrick_highlighter_daddy.jpg");
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+}
+
+.PatrickHighlightershades:nth-child(2) {
+  background-image: url("Photos/Patrick_highlighter_daddy.jpg");
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+}
+
 .PatrickBlush-shades {
   margin-left: 5px;
   border-radius: 35%;
@@ -390,6 +412,20 @@ section h1 {
   border: 3px solid #2c2222cb;
   border-radius: 38%;
   box-shadow: 0 0 8px #1b030a33;
+}
+
+/* Generic selected state for any shade button that receives the selected-shade class */
+.action-button.selected-shade,
+.summerfridays-colors.selected-shade,
+.kayali-buttoncolors.selected-shade {
+  border: 3px solid #2c2222cb;
+  box-shadow: 0 0 8px #1b030a33;
+}
+
+/* Patrick Highlighter buttons (base styles) */
+
+.PatrickHighlightershades:hover {
+  opacity: 0.85;
 }
 
 /*patrick blush catalog*/

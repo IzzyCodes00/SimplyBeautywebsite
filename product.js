@@ -42,11 +42,13 @@ const buttons = document.querySelectorAll(".action-button");
 buttons.forEach((button) => {
   button.addEventListener("click", () => {
     // Remove selected-shade from all sibling shade buttons in the same product
-    buttons.forEach((btn) => btn.classList.remove("selected-shade"));
-
-    // Add it to the one that was clicked
-    button.classList.add("selected-shade");
+    const productContainer = button.closest(".product");
+    const shadeButtons = productContainer.querySelectorAll(
+      ".PatrickBlush-shades, .summerfridays-colors, .peptideBlush-buttoncolors, .PatrickHighlightershades" // include highlighter shade class
+    );
+    shadeButtons.forEach((btn) => btn.classList.remove("selected-shade"));
     // Add selected-shade to the clicked button
+    button.classList.add("selected-shade");
 
     const targetElementId = button.dataset.target; // Get the target element from the data attribute
     const newSrc = button.dataset.newSrc;
