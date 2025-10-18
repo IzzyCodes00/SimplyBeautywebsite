@@ -44,7 +44,7 @@ buttons.forEach((button) => {
     // Remove selected-shade from all sibling shade buttons in the same product
     const productContainer = button.closest(".product");
     const shadeButtons = productContainer.querySelectorAll(
-      ".PatrickBlush-shades, .summerfridays-colors, .peptideBlush-buttoncolors, .PatrickHighlightershades" // include highlighter shade class
+      ".PatrickBlush-shades, .summerfridays-colors, .peptideBlush-buttoncolors, .PatrickHighlightershades" // remember to add new classes on css file
     );
     shadeButtons.forEach((btn) => btn.classList.remove("selected-shade"));
     // Add selected-shade to the clicked button

@@ -18,7 +18,7 @@ input_image = Image.open(input_path)
 output_image = remove(input_image)
 
 # Step 5: Convert to WebP and save
-output_image.save(output_path, "WEBP", quality=70, method=6)
+output_image.save(output_path, "WEBP", quality=80, method=6)
 
 
 print(f"✅ Background removed and saved as: {output_path}")
