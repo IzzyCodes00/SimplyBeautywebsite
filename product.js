@@ -101,12 +101,7 @@ function updateProductStatus(productName) {
 }
 
 // Example usage:
-[
-  "Elf Primer",
-  "Saie Illuminator",
-  "Saie Blush",
-  "Patrick Starrr One/Size Setting Spray",
-].forEach(updateProductStatus);
+["Elf Primer", "Saie Illuminator", "Saie Blush"].forEach(updateProductStatus);
 
 // Ensure the product name matches exactly with the text content of the .product-name element
 
